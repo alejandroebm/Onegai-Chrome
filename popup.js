@@ -40,8 +40,11 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
       currentVideo = '#01';
       paused = true;
       copyTextToClipboard(request.source[0]);      
-      for(var video in request.source){        
-        appendVideoToBody(video+1,request.source[video],false);
+      for(var video in request.source){
+        if(request.source[video].includes('.mpd')){
+              appendVideoToBody(video+1,'content/streaming.mp4',true);
+        }else appendVideoToBody(video+1,request.source[video],false);
+        
       }
     }else tryAgainAnimation();
   }else tryAgainAnimation();
