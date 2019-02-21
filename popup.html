@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="popup.css">
-        <script src="jquery.min.js"></script>
-        <script src='popup.js'></script>
-    </head>
-    <body>
-    </body>
+
+<head>
+    <style>
+        html,
+        body,
+        video {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        video {
+            margin: 2px 5px;
+            width: 240px;
+        }
+
+        video:hover {
+            opacity: 1;
+        }
+
+        .found {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop src="assets/looking.mp4"></video>
+</body>
+<script type="module" src="lib/main.js"></script>
+
 </html>

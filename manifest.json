@@ -1,10 +1,10 @@
 {
   "name": "Onegai",
-  "version": "0.5",
+  "version": "1.0",
   "manifest_version": 2,
   "description": "Find videos and share it with your friends",
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "assets/icon.png",
     "default_popup": "popup.html"
   },
   "permissions": ["tabs", "<all_urls>"],
