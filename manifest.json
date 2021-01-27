@@ -1,14 +1,14 @@
 {
   "name": "Onegai",
-  "version": "1.01",
+  "version": "1.2",
   "manifest_version": 2,
-  "description": "Find videos and share it with your friends",
+  "description": "Video Scrapper",
   "browser_action": {
     "default_icon": "assets/icon.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "<all_urls>"],
-  
+  "permissions": ["tabs", "http://*/", "https://*/"],
+
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
